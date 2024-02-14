@@ -1,3 +1,9 @@
+# Simply Chat App (Socket.io, TypeScript, React.js)
+
+### Installation depending
+
+    npm instal && cd server && npm install
+
 ### Running the Application
 
 Start the server. Navigate to the server directory and start your server:
