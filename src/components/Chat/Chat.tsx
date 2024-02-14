@@ -39,7 +39,7 @@ const Chat: React.FC = () => {
         ))}
       </ul>
       <form onSubmit={sendMessage}>
-        <input type="text" value={message} onChange={(e) => setMessage(e.target.value)}/>
+        <textarea value={message} onChange={(e) => setMessage(e.target.value)}/>
         <button type="submit">Send</button>
       </form>
     </div>
