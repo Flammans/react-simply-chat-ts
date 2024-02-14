@@ -9,7 +9,7 @@ const httpServer: HTTPServer = createServer(app);
 // Specify the CORS options directly within the Socket.IO Server initialization.
 const io: SocketIOServer = new SocketIOServer(httpServer, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });

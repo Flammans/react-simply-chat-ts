@@ -1,16 +1,26 @@
 # Simply Chat App (Socket.io, TypeScript, React.js)
 
-### Installation depending
+## Front-end
 
-    npm instal && cd server && npm install
+Placed in root directory.
 
-### Running the Application
+### Installation
 
-Start the server. Navigate to the server directory and start your server:
+    npm install
 
-    npm start
-
-Run the React application. In a separate terminal, from the project root, start your React app:
+### Running
 
     npm run dev
+
+## Back-end
+
+Placed inside `server` directory. So, firstly navigate to this directory (run `cd server`)
+
+### Installation
+
+    npm install
+
+### Running
+
+    npm run watch
 
