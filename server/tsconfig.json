@@ -3,17 +3,9 @@
     "target": "es6",                    // Set the ECMAScript target version for the compiled code
     "module": "commonjs",               // Use commonjs module system, suitable for Node.js
     "outDir": "./build",                // Directory to output the compiled JS files
-//    "rootDir": "./src",                 // Directory containing the TypeScript source files
     "strict": true,                     // Enable strict type-checking options
     "esModuleInterop": true,            // Enables ES6-style module import syntax in commonjs modules
     "skipLibCheck": true,               // Skip type checking of declaration files
     "forceConsistentCasingInFileNames": true // Disallow inconsistently-cased references to the same file
   },
-//  "include": [
-//    "src/**/*"                          // Include all TypeScript files in the src directory for compilation
-//  ],
-//  "exclude": [
-//    "node_modules",                     // Exclude the node_modules directory from compilation
-//    "**/*.test.ts"                      // Exclude test files from compilation
-//  ]
 }
