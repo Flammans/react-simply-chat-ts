@@ -7,6 +7,7 @@ const socket: Socket = io("http://localhost:3001");
 const Chat: React.FC = () => {
   const [message, setMessage] = useState<string>('');
   const [chat, setChat] = useState<string[]>([]);
+  const [userName, setUserName] = useState<string>('Beth');
 
   useEffect(() => {
     socket.on('chat message', (msg: string) => {
@@ -28,11 +29,17 @@ const Chat: React.FC = () => {
     <div>
       <ul>
         {chat.map((msg, index) => (
-          <li key={index}>{msg}</li>
+          <li key={index}>
+            <img src={`https://api.multiavatar.com/${userName}.png`} alt="User" className="avatar"/>
+            <div className="text">
+              <div className="name">{userName}</div>
+              {msg}
+            </div>
+          </li>
         ))}
       </ul>
       <form onSubmit={sendMessage}>
-        <input type="text" value={message} onChange={(e) => setMessage(e.target.value)} />
+        <input type="text" value={message} onChange={(e) => setMessage(e.target.value)}/>
         <button type="submit">Send</button>
       </form>
     </div>
